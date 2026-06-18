@@ -21,11 +21,6 @@ pipeline{
 				sh'gradle test'
 			}
 		}
-		stage('Run Application'){
-			steps{
-				sh'gradle run'
-			}
-		}
 	}
 	post{
 		success{
